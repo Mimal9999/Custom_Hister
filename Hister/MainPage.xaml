@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             xmlns:media="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:Hister"
+             x:Class="Hister.MainPage">
+    <ContentPage.Background>
+        <RadialGradientBrush Radius="0.5" 
+                             Center="0.5,0.5">
+            <RadialGradientBrush.GradientStops>
+                <GradientStop Color="#627ae4" Offset="0.0" />
+                <GradientStop Color="#1f38a6" Offset="1.0" />
+            </RadialGradientBrush.GradientStops>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Resources>
+        <local:SecondsToStringConverter x:Key="SecondsToStringConverter" />
+    </ContentPage.Resources>
+
+    <Grid>
+        <Label Text="Custom Hister" HorizontalOptions="Center" VerticalOptions="Start" FontSize="32" Margin="0,40,0,0" FontAttributes="Bold"/>
+        <VerticalStackLayout Padding="20" Margin="0,130,0,0">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="QRCodeGrid" IsVisible="True">
+            </Grid>
+            <toolkit:MediaElement  x:Name="AudioPlayer" Volume="1" ShouldAutoPlay="True" ShouldKeepScreenOn="True" PositionChanged="OnPositionChanged"/>
+            <Label x:Name="ResultLabel"
+           Text="Scan QR Code"
+           HorizontalOptions="Center" 
+           VerticalOptions="Center" Margin="0,50,0,0"/>
+
+            <Button x:Name="scanAgainButton"
+            Text="Scan again"
+            IsVisible="False"
+            Clicked="OnScanAgainClicked"
+            HorizontalOptions="Center" Margin="0,20,0,0"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="PlayPauseButton" Text="Play" Clicked="OnPlayPauseClicked" Margin="0,20,50,0" IsVisible="False"/>
+                <Button x:Name="StopButton" Text="Stop" Clicked="OnStopClicked" Margin="0,20,0,0" IsVisible="False"/>
+            </StackLayout>
+
+            <Slider x:Name="PlaybackSlider" Minimum="0" Maximum="100" IsVisible="False" DragStarted="Slider_DragStarted" DragCompleted="Slider_DragCompleted" Margin="0,20,0,0"/>
+
+            <Label x:Name="CurrentTimeLabel" Margin="0,10,0,0" IsVisible="False" HorizontalOptions="Start" x:DataType="toolkit:MediaElement" Text="{Binding Position, Source={x:Reference AudioPlayer}, Converter={StaticResource SecondsToStringConverter}}" />
+            <Label x:Name="DurationLabel" Margin="0,-20,0,0" IsVisible="False" HorizontalOptions="End" HorizontalTextAlignment="End" x:DataType="toolkit:MediaElement" Text="{Binding Duration, Source={x:Reference AudioPlayer}, Converter={StaticResource SecondsToStringConverter}}"/>
+        </VerticalStackLayout>
+        <Label Text="By Mimal9999" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,20"/>
+    </Grid>
+</ContentPage>
