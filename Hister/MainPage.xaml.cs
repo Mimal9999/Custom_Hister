@@ -3,6 +3,8 @@ using CommunityToolkit.Maui.Views;
 using MediaManager;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Text.Json;
+using System.Text;
 using YoutubeExplode;
 using YoutubeExplode.Videos;
 using YoutubeExplode.Videos.Streams;
@@ -64,9 +66,9 @@ public partial class MainPage : ContentPage
                 // Ensure UI operations are executed on the main thread
                 await MainThread.InvokeOnMainThreadAsync(async () =>
                 {
-                    await DisplayAlert("Code scanned", $"Content: {detectedCode}", "OK"); //Coment if not needed
+                    await DisplayAlert("Code scanned", $"Content: {detectedCode}", "OK");
 
-                    // Update layout
+                    // Update UI elements to display the detected code and hide the camera view
                     SetControlsVisibility(true);
                     ResultLabel.Text = $"Playing: {detectedCode}";
                     QRCodeGrid.IsVisible = false;
