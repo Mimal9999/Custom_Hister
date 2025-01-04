@@ -1,6 +1,6 @@
 <h1>Custom Hister - Fan Project</h1>
 
-<p><strong>Custom Hister</strong> is a fan-made project that allows you to play the <em>Hister</em> game using custom cards with your own songs from YouTube. The project includes an Android app that works similarly to the original, as well as a set of tools to create your own cards based on YouTube playlists.</p>
+<p><strong>Custom Hister</strong> is a fan-made project that allows you to play the <em>Hitster</em> game using custom cards with your own songs from YouTube. The name is Hister, not to use the original name, just in case. The project includes an Android app that works similarly to the original, as well as a set of tools to create your own cards based on YouTube playlists.</p>
 
 <h2>Required Tools:</h2>
 <ul>
