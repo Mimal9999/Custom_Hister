@@ -15,6 +15,8 @@
 
 <p>To create your own cards for the game, you need to prepare a playlist on YouTube. The playlist can be set to public or private. If the playlist contains songs that require signing into YouTube, you will need to open a browser and log into YouTube while the script is running.</p>
 
+<p><strong>All Python scripts can be found in the <code>Hister/PythonScripts</code> folder.</strong></p>
+
 <h4>Step 1: Run <code>PlaylistToExcel.py</code></h4>
 
 <p>In the first step, run the script <code>PlaylistToExcel.py</code> via the terminal. Open the terminal in the directory where the script is located and enter the following command:</p>
