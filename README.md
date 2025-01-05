@@ -12,9 +12,9 @@
 <h2>Download:</h2>
 <p>You can download the executable files here:</p>
 <ul>
-    <li><a href="root/Executables/com.companyname.customhister-Signed.apk">CustomHister</a> - Android application</li>
-    <li><a href="root/Executables/CardsGenerator.rar">CardsGenerator</a> - Card generation application</li>
-    <li><a href="root/Executables/PythonScripts.rar">PythonScripts</a> - Python scripts for data generation</li>
+    <li><a href="/Executables/com.companyname.customhister-Signed.apk">CustomHister</a> - Android application</li>
+    <li><a href="/Executables/CardsGenerator.rar">CardsGenerator</a> - Card generation application</li>
+    <li><a href="/Executables/PythonScripts.rar">PythonScripts</a> - Python scripts for data generation</li>
 </ul>
 <p>You can also build the applications yourself by cloning the repository.</p>
 
