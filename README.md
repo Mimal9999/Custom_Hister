@@ -13,7 +13,7 @@
 <p>You can download the executable files here:</p>
 <ul>
     <li><a href="master/Executable/com.companyname.customhister-Signed.apk" download="download">CustomHister</a> - Android application</li>
-    <li><a href="https://github.com/Mimal9999/Custom_Hister/blob/master/Executables/CardsGenerator.rar">CardsGenerator</a> - Card generation application</li>
+    <li><a href="[https://github.com/Mimal9999/Custom_Hister/blob/master/Executables/CardsGenerator.rar](https://github.com/Mimal9999/Custom_Hister/raw/refs/heads/master/Executable/CardsGenerator.rar)">CardsGenerator</a> - Card generation application</li>
     <li><a href="https://github.com/Mimal9999/Custom_Hister/blob/master/Executables/PythonScripts.rar">PythonScripts</a> - Python scripts for data generation</li>
 </ul>
 <p>You can also build the applications yourself by cloning the repository.</p>
