@@ -1,6 +1,6 @@
 <h1>Custom Hister - Fan Project</h1>
 
-<p><strong>Custom Hister</strong> is a fan-made project that allows you to play the <em>Hitster</em> game using custom cards with your own songs from YouTube. The name is Hister, not to use the original name, just in case. The project includes an Android app that works similarly to the original, as well as a set of tools to create your own cards based on YouTube playlists.</p>
+<p><strong>Custom Hister</strong> is a fan-made project that allows you to play the <em>Hister</em> game using custom cards with your own songs from YouTube. The name is Hister, not to use the original name, just in case. The project includes an Android app that works similarly to the original, as well as a set of tools to create your own cards based on YouTube playlists.</p>
 
 <h2>Required Tools:</h2>
 <ul>
@@ -8,6 +8,17 @@
     <li>Libraries installed from the <code>requirements.txt</code> file</li>
     <li>Visual Studio with MAUI (for editing card designs)</li>
 </ul>
+
+<h2>Download:</h2>
+<p>You can download the executable files here:</p>
+<ul>
+    <li><a href="root/Executables/com.companyname.customhister-Signed.apk">CustomHister</a> - Android application</li>
+    <li><a href="root/Executables/CardsGenerator.rar">CardsGenerator</a> - Card generation application</li>
+    <li><a href="root/Executables/PythonScripts.rar">PythonScripts</a> - Python scripts for data generation</li>
+</ul>
+<p>You can also build the applications yourself by cloning the repository.</p>
+
+<p>All files have been scanned using VirusTotal. The <code>CardsGenerator.rar</code> file was flagged by 1 out of 62 services as suspicious, likely due to the lack of a digital signature for the Windows application. If you do not trust the <code>.exe</code> application, you can build it yourself by cloning the repository available <a href="https://github.com/Mimal9999/CardsGenerator">HERE</a>.</p>
 
 <h2>Tool Usage Guide:</h2>
 
