@@ -42,7 +42,11 @@
 
 <p>Next, run the <code>filter.py</code> script in the same way as before. The script will select the artist, song title, and other data from the playlist. It will also filter the song titles, attempting to remove the artist’s name from the title and eliminating common, unnecessary phrases like "Official Music Video," etc. If you wish, you can manually adjust all the data in this file.</p>
 
-<h4>Step 3: Run <code>joinExcelData.py</code></h4>
+<h4>Step 3: Run <code>checkYear.py</code></h4>
+
+<p>Next, run the <code>checkYear.py</code> script in the same way as before. The script will verify if the year of the song is valid. The script uses MusicBrains.org database to get songs data. Not every song can be found there, if not, year from YouTube will be used.</p>
+
+<h4>Step 4: Run <code>joinExcelData.py</code></h4>
 
 <p>Afterward, run the <code>joinExcelData.py</code> script in the same manner as the previous scripts.</p>
 
